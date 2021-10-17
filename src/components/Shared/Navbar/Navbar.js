@@ -17,7 +17,7 @@ const Navbar = () => {
                         <div className="navbar-nav ms-auto">
 
                             <Link to="/home" className="nav-link">Home</Link>
-                            <Link to="/home" className="nav-link">About us</Link>
+                            <Link to="/service" className="nav-link">Service</Link>
                             <Link to="/home" className="nav-link">Vehicles</Link>
                             {
                                 <Link to="/bookingsList" className="nav-link">User Dashboard</Link>
@@ -27,7 +27,9 @@ const Navbar = () => {
                             }
                             <Link to="/home" className="nav-link">Contact</Link>
                             {
-                                 <button className="btn btn-warning me-2" >Log In</button> 
+                                 <Link to="/login">
+                                 <button className="btn btn-warning me-2" >Log In</button>
+                                 </Link> 
                             }
                             { <button className="btn btn-success"></button>}
                         </div>
